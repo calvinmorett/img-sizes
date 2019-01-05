@@ -5,15 +5,16 @@ html {
     transform: scale(0.3);
 }
 *,
-html,body{
-padding:0;
-margin:0;
-top:0;
-margin-top:0;
+html,
+body{
+	padding:0;
+	margin:0;
+	top:0;
+	margin-top:0;
 }
 body{
 	margin:0 auto;
-  margin-top:-750em;
+	margin-top:-750em;
 	background:#eee;
 	position:relative;
 }
@@ -40,15 +41,20 @@ section:hover {
 	transform:scale(2);
 	z-index:9999999999999999;
 }
-.h4x3, .h16x9, .h2x1, .v3x4, .s1x1{
-
-	font-size:80px;
-	z-index:9999999999999;
-margin-bottom:25em;
+.h4x3, .h16x9, .h2x1, .v3x4, .s1x1 {
+	font-size: 80px;
+	z-index: 9999999999999;
+	margin-bottom: 25em;
+	padding: 10px;
+}
+.h4x3, .h16x9, .h2x1, .v3x4, .s1x1{font-size:80px;z-index:9999999999999;margin-bottom:25em;padding: 10px;}
+.h4x3 div, .h16x9 div, .h2x1 div, .v3x4 div, .s1x1 div{
+	display:inline-block;
+	margin:40px;
 }
 section h1{
-position:absolute;
-top:0;
+	position:absolute;
+	top:0;
 	right:0;
 	background:black;
 	color:white;
