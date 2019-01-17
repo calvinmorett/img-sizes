@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Image Sizes - Visual</title>
-  <style>
+<style>
 body{
 	margin:0;
 	padding:0;
@@ -50,13 +50,13 @@ body{
 .sz {
     float: left;
     width: 495px;
+    top: 100px;
+    left: 350px;
     height: 650px;
     overflow: hidden;
     box-shadow: 0 0 0 2px #333;
     background: #000;
     position: absolute;
-    top: 100px;
-    left: 350px;
 	background:transparent url('https://raw.githubusercontent.com/calvinmorett/img-sizes/master/hover.png') no-repeat;
 }
 /*
@@ -65,6 +65,82 @@ body{
 .child + .sibling	Adjacent sibling
 .child ~ .sibling	Far sibling
 */
+.h16x9:hover ~ .sz {
+	background:transparent url('https://raw.githubusercontent.com/calvinmorett/img-sizes/master/16x9sizes.png') no-repeat;
+}
+.h2x1:hover ~ .sz {
+	background:transparent url('https://raw.githubusercontent.com/calvinmorett/img-sizes/master/2x1sizes.png') no-repeat;
+}
+.h4x3:hover ~ .sz {
+	background:transparent url('https://raw.githubusercontent.com/calvinmorett/img-sizes/master/4x3sizes.png') no-repeat;
+}
+.v3x4:hover ~ .sz {
+	background:transparent url('https://raw.githubusercontent.com/calvinmorett/img-sizes/master/3x4sizes.png') no-repeat;
+}
+.s1x1:hover ~ .sz {
+	background:transparent url('https://raw.githubusercontent.com/calvinmorett/img-sizes/master/1x1sizes.png') no-repeat;
+}
+
+.list{
+	overflow:visible;
+}
+.list a {
+  display: inline-block;
+}
+
+.list a .tooltiptext {
+	font-size:12px;
+  visibility: hidden;
+  background-color: transparent;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top:50px;
+  left:345px;
+  width: 200px;
+  top: 100px;
+    box-shadow: 0 0 0 2px #333;
+  left: calc(352px + 495px);
+}
+.list a:hover .tooltiptext {
+  visibility: visible;
+}
+hr{
+	width:100%;
+	height:1px;
+	background:#ccc;
+	border:0;
+	margin:5px 0;
+	padding:0;
+}
+</style>
+</head>
+<body><div class="wrapper">
+<div class="list">
+		<h3 class="label">Image Sizes</h3>
+    <a href="#" class="h16x9">16x9 Horizontal
+  <span class="tooltiptext">h8: 3840x2160 <hr> h10: 1920x1080 <hr> h11: 1280x1720</span></a>
+	
+    <a href="#" class="h2x1">2x1 Horizontal
+  <span class="tooltiptext">h2: 2048x1024<hr> h1: 1024x512</span></a>
+	
+    <a href="#" class="h4x3">4x3 Horizontal
+  <span class="tooltiptext">h9: 1440x1080 <hr> h6: 720x540</span></a>
+	
+    <a href="#" class="v3x4">3x4 Vertical
+  <span class="tooltiptext">v13: 2160x2880 <hr> v10: 1536x2048 <hr> v9: 1080x1440 <hr> v4: 540x720</span></a>
+	
+    <a href="#" class="s1x1">1x1 Square
+  <span class="tooltiptext">s4: 3000x3000 <hr> s3: 2000x2000 <hr> s2: 1400x1400 <hr> s1: 700x700</span></a>
+	
+	<div class="sz"><div>
+</div>
+</body>
+		
+
 .h16x9:hover ~ .sz {
 	background:transparent url('https://raw.githubusercontent.com/calvinmorett/img-sizes/master/16x9sizes.png') no-repeat;
 }
