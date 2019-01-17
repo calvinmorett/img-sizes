@@ -1,62 +1,76 @@
-html {
-    zoom: 0.3; /* Old IE only */
-    -moz-transform: scale(0.3);
-    -webkit-transform: scale(0.3);
-    transform: scale(0.3);
-}
-*,
-html,
 body{
-	padding:0;
 	margin:0;
-	top:0;
+	padding:0;
+	background:#222;
+	color:white;
+	font-family:Arial, sans-serif;
+}
+.wrapper{
+	width:1000px;
+	margin:100px;
+}
+.list {
+    height: 284px;
+    box-shadow: 0 0 0 2px #333;
+    overflow: hidden;
+    background: rgba(0,0,0,.25);
+    padding: 0;
+    margin: 0;
+    margin-right: 25px;
+    float: left;
+    width: 206px;
+}
+.list a{
+	padding:10px;
+	font-size:24px;
+	color:#fff;
+	text-decoration:none;
+	display: block;
+}
+.list a:hover {
+	color:#ccc;
+	cursor:pointer;
+	background:rgba(0,50,200,.5);
+}
+.label{
+	padding:10px;
+	font-weight:bold;
+	color:#03A9F4;
+	box-shadow:0 0 0 2px #03A9F4;
+	margin-bottom:2px;
+	background:rgba(0,50,200,.5);
 	margin-top:0;
 }
-body {
-    margin: 0 auto;
-    margin-top: -13900px;
-    background: #eee;
-    position: relative;
+.sz {
+    float: left;
+    width: 495px;
+    height: 650px;
+    overflow: hidden;
+    box-shadow: 0 0 0 2px #333;
+    background: #000;
+    position: absolute;
+    top: 100px;
+    left: 350px;
+	background:transparent url('https://raw.githubusercontent.com/calvinmorett/img-sizes/master/hover.png') no-repeat;
 }
-hr{
-height:50px;
-	margin-bottom:20em;
-	border:0;
-	background:black;
-z-index:-1;
-	display:none;
+/*
+.parent .child	Descendant
+.parent > .child	Direct descendant
+.child + .sibling	Adjacent sibling
+.child ~ .sibling	Far sibling
+*/
+.h16x9:hover ~ .sz {
+	background:transparent url('https://raw.githubusercontent.com/calvinmorett/img-sizes/master/16x9sizes.png') no-repeat;
 }
-section{
-	background:#fff;
-	padding:3em;
-	transition:transform .15s ease;
-	margin:0 auto;
-	text-align:center;
-position:relative;
-	z-index:50;
-	opacity:.7;
+.h2x1:hover ~ .sz {
+	background:transparent url('https://raw.githubusercontent.com/calvinmorett/img-sizes/master/2x1sizes.png') no-repeat;
 }
-section:hover {
-	opacity:1;
-	transform:scale(2);
-	z-index:9999999999999999;
+.h4x3:hover ~ .sz {
+	background:transparent url('https://raw.githubusercontent.com/calvinmorett/img-sizes/master/4x3sizes.png') no-repeat;
 }
-.h4x3, .h16x9, .h2x1, .v3x4, .s1x1 {
-	font-size: 80px;
-	z-index: 9999999999999;
-	margin-bottom: 25em;
-	padding: 10px;
+.v3x4:hover ~ .sz {
+	background:transparent url('https://raw.githubusercontent.com/calvinmorett/img-sizes/master/3x4sizes.png') no-repeat;
 }
-.h4x3, .h16x9, .h2x1, .v3x4, .s1x1{font-size:80px;z-index:9999999999999;margin-bottom:25em;padding: 10px;}
-.h4x3 div, .h16x9 div, .h2x1 div, .v3x4 div, .s1x1 div{
-	display:inline-block;
-	margin:40px;
-}
-section h1{
-	position:absolute;
-	top:0;
-	right:0;
-	background:black;
-	color:white;
-	padding:20px;
+.s1x1:hover ~ .sz {
+	background:transparent url('https://raw.githubusercontent.com/calvinmorett/img-sizes/master/1x1sizes.png') no-repeat;
 }
